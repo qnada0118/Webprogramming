@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Week 3</title>
+        <style>
+            header{
+                padding-left: 10px;
+            }
+            header details{
+                padding:3px 10px;
+            }
+            nav{
+                background-color: mistyrose;
+            }
+            nav ul{                         
+                margin: 0;
+                padding: 10px 0px;
+                width: 567px;
+                height: px;
+            }
+            nav ul li{
+                display: inline-block;
+                list-style-type: none;
+                padding: 0 15px;
+                }
+            nav ul li a{
+                color: white;
+                text-decoration: none;      /* 링크 보이지 않게 */
+            }
+            nav ul li a:hover{
+                color: violet;
+            }
+            #Schedule{
+                border-collapse: collapse;
+            } 
+            #Schedule caption{
+                padding:10px 0;
+            }
+            #Schedule th, #Schedule td{
+                border: 1px solid black;
+                text-align: center;
+                padding: 15px 40px;
+            }
+            #Schedule thead{
+                background-color: aliceblue;
+            }
+            #Schedule tbody tr:hover{
+                background-color: mistyrose;
+            }
+            #Schedule ul{
+                padding-left: 0;
+            }
+            #Schedule ul li{
+                padding-left: 15px;
+            }
+            #block{
+                display : block;
+                padding: 15pt 15pt;
+                text-align: center;
+                width:100px;
+                height: 60px;
+                background-color: blueviolet;
+
+            }
+            article{
+                padding: 5px 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Web Programming</h1>
+        <nav>
+            <ul>
+                <li><a href="#Week1">Week 1</a></li>
+                <li><a href="#Week2">Week 2</a></li>
+                <li><a href="#Week3">Week 3</a></li>
+                <li><a href="#Week4">Week 4</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <hr>
+        <header>
+            <h3>웹에 관하여</h3>
+            <div>
+                <details>
+                    <summary>웹의 기본 목적</summary>
+                    <p>웹의 기본 목적은 한 컴퓨터에서 만든 문서를 다른 컴퓨터에서 쉽게 볼 수 있게 하는 것이다.</p>
+                </details>
+                <details>
+                    <summary>왜 Why?</summary>
+                    <p>전 세계의 컴퓨터들을 인터넷으로 연결한 시스템을 www, 즉 웹이라고 부른다.</p>
+                </details>
+            </div>
+            <br>
+                <table id="Schedule">
+                    <caption><b>Weekly Schedule</b></caption>
+                    <thead>
+                        <tr>
+                            <th>Week</th>
+                            <th>Date</th>
+                            <th>Contents</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>SEP 2</td>
+                            <td>
+                                <ul>
+                                <li>강의 개요</li>
+                                <li>웹의 개념과 구조</li>
+                                <li> Visual Studio Code</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>SEP 9</td>
+                            <td>HTML Review</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>SEP 16</td>
+                            <td>CSS Review</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>SEP 23</td>
+                            <td>JavaScript</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </header>
+        <hr>
+        <section>
+        <ol>
+            <article id="Week1">
+                <li><b>Week 1</b></li>
+                <ul>
+                    <li><a href ="C:\Users\qnada\OneDrive\문서\HANSUNG\2024-2\웹프로그래밍(A)/01.Syllabus.pdf">강의 개요</a></li>
+                    <li><a href ="C:\Users\qnada\OneDrive\문서\HANSUNG\2024-2\웹프로그래밍(A)/01.웹의 개념과 구조.pdf">웹의 개념과 구조</a></li>
+                    <li><a href ="C:\Users\qnada\OneDrive\문서\HANSUNG\2024-2\웹프로그래밍(A)/01.VisualStudioCode.pdf">Visual studio Code</a></li>
+                    <ol>
+                        <li>설치</li>
+                        <li>유용한 plug-ins</li>
+                        <ul>
+                            <li>Material Theme</li>
+                            <li>Prettier</li>
+                            <li>indent-rainbow</li>
+                            <li>Auto Rename Tag</li>
+                            <li>HTML CSS Support</li>
+                            <li>Live Server</li>
+                        </ul>
+                        <li>Emmet</li>
+                    </ol>
+                </ul>
+            </article>
+                <hr>
+            <article id="Week2">
+                <li><b>Week 2 : <a href ="C:\Users\qnada\OneDrive\문서\HANSUNG\2024-2\웹프로그래밍(A)/02.HTML-Review.pdf">HTML Review</a></b></li>
+                <br><b>Input types</b><br><br>
+                <ins>Check Box</ins><br><br>
+                <input type = 'checkbox'>
+                HTML5
+                <input type = 'checkbox'>
+                CSS3
+                <input type = 'checkbox'>
+                JavaScript
+                <br><br>
+                <ins>Radio Button</ins><br><br>
+                <input type = 'radio'>
+                HTML5<br>
+                <input type = 'radio'>
+                CSS3<br>
+                <input type = 'radio'>
+                JavaScript<br><br>
+    
+                <ins>Combo Box</ins><br><br>
+                <select>
+                    <option>HTML5</option>
+                    <option>CSS3</option>
+                    <option>JavaScript</option>
+                </select>
+            </article>
+            <hr>
+            <article id="Week3">
+                <li><b>Week 3 : <a href ="C:\Users\qnada\OneDrive\문서\HANSUNG\2024-2\웹프로그래밍(A)/03.CSS3-Review.pdf">CSS Review</a></b></li>
+                <ul>
+                    <br>
+                    <li>Selectors : *, tag, .class, 가상클래스, attribute</li>
+                    <li>Properties : background-color, background, color, border-color, 
+                        font-size, text-align, text-decoration, font-family, ...</li>
+                    <li>Box Model</li>
+                        <ul>
+                        <li>block 요소, inline 요소</li>
+                        <li>margin, padding, border, height, width</li>
+                        </ul>
+                    <li>Display : block, inline, inline-block</li>
+                    <li>Position : absolute, relative, fixed, float</li>
+                </ul>
+                <br>
+                <div>
+                    <span id="block"> BLOCK SPAN </span>
+                </div>
+            </article>
+            <hr>
+            <article id="Week4">
+                <li><b>Week 4 </b></li>
+
+            </article>
+    
+        </ol>
+        </section>
+    </body>
+</html>
