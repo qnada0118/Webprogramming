@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prac8-6</title>
+  <script>
+    function Do(){
+      let ui = prompt("HTML 텍스트 혹은 그냥 텍스트를 입력");
+      let p=document.getElementById('p');
+      p.innerHTML = ui;
+    }
+  </script>
+</head>
+<body>
+  <h2>innerHTML</h2>
+  <hr>
+  <p id='p' onclick="Do()"> 
+    이번 여름에는 어디로 여행을 갈까요?
+  </p>
+</body>
