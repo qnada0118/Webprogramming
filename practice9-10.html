@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 60px;
+            height: 20px; 
+            cursor: pointer; 
+        }
+        input[type="text"]{
+            width : 247px;
+        }
+    </style>
+    <script>
+        function addInput(value){
+            const input = document.getElementById('blank');
+            if (input.value === "0") {
+                input.value = value;
+            } else {
+                input.value += value;
+            }
+        }
+        function cal(){
+            const input = document.getElementById('blank');
+            if(input.value != "0"){
+                let exp = document.getElementById("blank");
+                let result = document.getElementById("blank");
+                result.value = eval(exp.value);
+            }            
+        }
+        function erase1(){
+            const input = document.getElementById('blank');
+            input.value = input.value.substr(0, input.value.length-1);
+        }
+        function eraseAll(){
+            const input = document.getElementById('blank');
+            input.value="0";
+        }
+    </script>
+</head>
+<body>
+    <h2>계산기 만들기</h2>
+    <hr>
+    <form>
+        <input id="blank" type="text" value="0"><br>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td><button type="button" onclick="erase1()">BACK</button></td>
+                    <td><button type="button" onclick="eraseAll()">CE</button></td>
+                    <td><button type="button" onclick="eraseAll()">C</button></td>
+                    <td><button type="button" onclick="cal()">=</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="addInput('7')">7</button></td>
+                    <td><button type="button" onclick="addInput('8')">8</button></td>
+                    <td><button type="button" onclick="addInput('9')">9</button></td>
+                    <td><button type="button" onclick="addInput('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="addInput('4')">4</button></td>
+                    <td><button type="button" onclick="addInput('5')">5</button></td>
+                    <td><button type="button" onclick="addInput('6')">6</button></td>
+                    <td><button type="button" onclick="addInput('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="addInput('1')">1</button></td>
+                    <td><button type="button" onclick="addInput('2')">2</button></td>
+                    <td><button type="button" onclick="addInput('3')">3</button></td>
+                    <td><button type="button" onclick="addInput('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="addInput('0')">0</button></td>
+                    <td><button type="button" onclick="addInput('+')">+</button></td>
+                    <td><button type="button">NONE</button></td>
+                    <td><button type="button">NONE</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
