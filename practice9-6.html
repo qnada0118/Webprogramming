@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice9-06</title>
+    <script>
+        let scale = 1;
+        function WheelEvent(e,obj){
+            if(e.wheelDelta>0){
+                scale -=0.05;
+                if(scale <0.1)
+                    scale=0.1;
+            }
+            else {
+                scale +=0.05;
+            }
+            obj.style.transform = `scale(${scale})`;
+        }
+    </script>
+</head>
+<body>
+    <h2>이미지 휠을 이용한 이미지 확대/축소</h2>
+    <hr>
+    이미지 위에 휠을 위로 굴리면 이미지가 축소되고 아래로 굴리면 이미지가 확대됩니다.
+    <img src="상상부기.png" onwheel="WheelEvent(event,this)" style="transition: transform 0.1s;"><br>
+    
+</body>
+</html>
